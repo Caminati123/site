@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/inscriptions.css">
+
+    <div class="page">
+        <section class="haut-page">
+            <header class="header">
+                <img src="images/logo.png" alt="Logo du site">
+                <nav class="nav">
+                    <li><a href="index.php">Accueil</a></li>
+	                    <li><a href="#homme">Homme</a></li>
+                    <li><a href="#femme">Femme</a></li>
+                </nav>
+            </header>
+        </section>
+        
+        <section class="inscription">
+            <h2>Inscription</h2>
+            <section class="création-compte">
+                <form action="envoi-formulaire.php"method="post">
+                    <p class="compte">Email</p>
+                    <input type="text" size="20" name="email" maxlength="150"><br/>
+                    <p class="compte">Password</p>         
+                    <input type="text" size="20" name="mdp" maxlength="50"><br/>
+                    <p class="compte">Confirmer password</p>         
+                    <input type="text" size="20" name="mdp" maxlength="50"><br/>
+            </section>
+    
+            <section class="btn-valider">
+                <button>Valider</button>        
+            </section>
+
+        </section>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

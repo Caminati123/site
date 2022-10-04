@@ -1,0 +1,253 @@
+* {
+    font-family: 'Constantia';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* haut de page */
+/* mise en place de l'image de fond */
+header.header {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+section.top-page {
+    background: url('../images/fond.png');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+
+/* mise en place du bandeau haut et du logo */
+
+header.header img {
+    width: 100px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/*popup*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #7c8183;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: #333;
+    font-family: 'Elephant';
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #62bdd8;
+}
+
+.info-compte {
+    margin-top: 100px;
+    justify-content: center;
+}
+
+#container{
+    width:300px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #62bdd8;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #62bdd8;
+    border: 1px solid #62bdd8;
+}
+
+.pas-membre {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* items */
+
+.services {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #62bdd8;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* section derniere creation */
+
+.grand-titre {
+    font-size: 40px;
+    font-family: 'Elephant';
+    font-weight: 100;
+    position: relative;
+}
+
+.grand-titre::before {
+    content: "";
+    position: absolute;
+    background-color: #62bdd8;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.dernière-création {
+    margin: 100px;
+    margin-top : 140px;
+}
+
+.dernières-créations {
+    display: flex;
+    margin-top : 0px;
+}
+
+.vetements {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.no-grid {
+    width: 400  px;
+    height: 500px;
+    flex: 1;
+}
+/*
+.vetement1 {
+    background-image: url(../images/dernière_création/image_1.png);
+}
+
+.vetement2 {
+    background-image: url(../images/dernière_création/image_2.png);
+}
+
+.vetement3 {
+    background-image: url(../images/dernière_création/image_3.png);
+}
+*/
+.vetement-info {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+}
+
+.vetement-type {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.vetement-prix {
+    font-size: 14px;
+    font-weight: 800; 
+    line-height: 3px;
+    color: #62bdd8;
+}
+
+
+/* bas de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}

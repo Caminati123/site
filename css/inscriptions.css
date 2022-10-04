@@ -1,0 +1,72 @@
+* {
+    font-family: 'Constantia';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.page{
+    width: 780px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* haut de page */
+/* mise en place du bandeau haut et du logo */
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 100px;
+}
+
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    margin-left: 30px;
+}
+
+nav.nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.inscription {
+    margin-top: 150px;
+}
+
+.inscription h2 {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    color: #333;
+    font-family: 'Elephant';
+}
+
+.création-compte {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-valider {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.compte {
+    margin-top: 2px;
+    display: flex;
+}
